@@ -65,7 +65,6 @@ const Game = () => {
     setXIsNext((step % 2) === 0);
   };
 
-  // const history = this.state.history;
   const current = history[stepNumber];
   const winner = calculateWinner(current.squares);
 
