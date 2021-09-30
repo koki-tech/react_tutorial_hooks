@@ -54,13 +54,12 @@ const Game = () => {
       return;
     }
     squares[i] = xIsNext ? "X" : "O";
-    setHistory(history.concat([{squares: squares}]));
-    setStepNumber(history.length);
+    setHistory(historyCopy.concat([{squares: squares}]));
+    setStepNumber(historyCopy.length);
     setXIsNext(!xIsNext);
   };
 
   const jumpTo = (step) => {
-    setHistory(history.slice(0, step + 1));
     setStepNumber(step);
     setXIsNext((step % 2) === 0);
   };
