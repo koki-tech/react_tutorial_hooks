@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-// import { Square } from './Square';
 import Board from './Board';
 
 const Game = () => {
