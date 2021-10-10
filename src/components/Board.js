@@ -6,6 +6,7 @@ const Board = (props) => {
         <Square
           value={props.squares[i]}
           onClick={() => props.onClick(i)}
+          num={i}
         />
       );
     };
